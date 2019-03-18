@@ -99,11 +99,6 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
-//        if proposedDestinationIndexPath.row == 0 {
-//            return sourceIndexPath
-//        } else {
-//            return proposedDestinationIndexPath
-//        }
         
         return (proposedDestinationIndexPath.row == 0 ? sourceIndexPath : proposedDestinationIndexPath)
     }
@@ -112,6 +107,11 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
         let newIndexPath = IndexPath(row: locationsArray.count, section: 0)
         var newWeatherLocation = WeatherLocation()
         newWeatherLocation.name = place.name!
+        
+        let latitude = place.coordinate.latitude
+        let longitude = place.coordinate.longitude
+        newWeatherLocation.coordinates = "\(latitude),\(longitude)"
+        
         locationsArray.append(newWeatherLocation)
         tableView.insertRows(at: [newIndexPath], with: .automatic)
     }
@@ -123,7 +123,6 @@ extension ListVC: GMSAutocompleteViewControllerDelegate {
     
     // Handle the user's selection.
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-        print("Place name: \(place.name)")
         dismiss(animated: true, completion: nil)
         updateTable(place: place)
     }
