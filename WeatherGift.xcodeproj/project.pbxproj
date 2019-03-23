@@ -17,6 +17,7 @@
 		C44DD4932236B8D300CD5C11 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DD4922236B8D300CD5C11 /* PageVC.swift */; };
 		C4C5760C223FF4DD004917D5 /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5760B223FF4DD004917D5 /* WeatherLocation.swift */; };
 		C4C5760E22400FE3004917D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5760D22400FE3004917D5 /* Constants.swift */; };
+		C4F5A24E2246D141008A7F71 /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5A24D2246D141008A7F71 /* DayWeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C44DD4922236B8D300CD5C11 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		C4C5760B223FF4DD004917D5 /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		C4C5760D22400FE3004917D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C4F5A24D2246D141008A7F71 /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +83,9 @@
 				C4C5760B223FF4DD004917D5 /* WeatherLocation.swift */,
 				C44DD4922236B8D300CD5C11 /* PageVC.swift */,
 				C44DD48E2236B09E00CD5C11 /* DetailVC.swift */,
-				C4C5760D22400FE3004917D5 /* Constants.swift */,
+				C4F5A24D2246D141008A7F71 /* DayWeatherCell.swift */,
 				C44DD4902236B5D900CD5C11 /* ListVC.swift */,
+				C4C5760D22400FE3004917D5 /* Constants.swift */,
 				C44DD4802236B05200CD5C11 /* Main.storyboard */,
 				C44DD4832236B05300CD5C11 /* Assets.xcassets */,
 				C44DD4852236B05300CD5C11 /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F5A24E2246D141008A7F71 /* DayWeatherCell.swift in Sources */,
 				C4C5760C223FF4DD004917D5 /* WeatherLocation.swift in Sources */,
 				C44DD4912236B5D900CD5C11 /* ListVC.swift in Sources */,
 				C44DD4932236B8D300CD5C11 /* PageVC.swift in Sources */,
