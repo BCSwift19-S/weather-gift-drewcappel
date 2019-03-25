@@ -128,7 +128,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourlyCell" id="gcj-Ax-Y0t">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourlyCell" id="gcj-Ax-Y0t" customClass="HourlyWeatherCell" customModule="WeatherGift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -187,6 +187,13 @@
                                             <constraint firstItem="pvI-kQ-7An" firstAttribute="leading" secondItem="gcj-Ax-Y0t" secondAttribute="leadingMargin" constant="29" id="sWv-Np-4AR"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="pvI-kQ-7An" secondAttribute="bottom" constant="17" id="wax-pY-kYm"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="hourlyIcon" destination="ysW-6b-S6L" id="49a-pt-Ub9"/>
+                                            <outlet property="hourlyPrecipProb" destination="pvI-kQ-7An" id="vdV-mo-1CD"/>
+                                            <outlet property="hourlyTemp" destination="nIV-pE-n2T" id="B3q-yC-VBk"/>
+                                            <outlet property="hourlyTime" destination="4Af-SL-g3Y" id="u5P-Ty-ZCi"/>
+                                            <outlet property="rainDropImage" destination="Vdc-8t-Gqj" id="bBx-Hx-yjG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
